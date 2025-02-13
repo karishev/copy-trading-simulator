@@ -1,0 +1,43 @@
+{
+  "name": "stock-trading-simulator",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Stock Trading Simulator Web App",
+  "main": "./server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && pnpm run build",
+    "install-client": "cd client && pnpm install",
+    "heroku-postbuild": "pnpm run install-client && pnpm run build",
+    "dev": "nodemon server/server.js",
+    "client": "cd client && pnpm start",
+    "dev:full": "concurrently \"pnpm run dev\" \"pnpm run client\""
+  },
+  "author": "Shyngys Karishev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OktarianTB/stock-trading-simulator/issues"
+  },
+  "homepage": "https://github.com/OktarianTB/stock-trading-simulator#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=14.16"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  }
+}
