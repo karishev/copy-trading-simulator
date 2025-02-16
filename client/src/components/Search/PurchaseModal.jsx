@@ -90,7 +90,7 @@ const PurchaseModalContent = ({
     };
 
     const purchase = {
-      userId: userData.user.id,
+      userId: userData.user._id,
       ticker: stockInfo.ticker,
       quantity: Number(quantity),
       price: pastDay.adjClose,
