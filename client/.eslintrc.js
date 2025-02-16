@@ -1,11 +1,4 @@
 module.exports = {
-  extends: [
-    'react-app',
-    'react-app/jest'
-  ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  }
+  extends: 'react-app',
+  root: true
 }; 

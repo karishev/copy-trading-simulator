@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Typography from "@mui/material/Typography";
 
 const Title = (props) => {
@@ -8,10 +7,6 @@ const Title = (props) => {
       {props.children}
     </Typography>
   );
-};
-
-Title.propTypes = {
-  children: PropTypes.node,
 };
 
 export default Title;
