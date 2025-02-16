@@ -15,10 +15,6 @@
   },
   "author": "Shyngys Karishev",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OktarianTB/stock-trading-simulator/issues"
-  },
-  "homepage": "https://github.com/OktarianTB/stock-trading-simulator#readme",
   "dependencies": {
     "axios": "^1.6.7",
     "bcrypt": "^5.1.1",
